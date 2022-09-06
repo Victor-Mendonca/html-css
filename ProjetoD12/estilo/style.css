@@ -1,0 +1,78 @@
+@charset "UTF-8 ";
+/*
+::-webkit-scrollbar {
+    background-color: gray;
+    width: 10px;
+}
+::-webkit-scrollbar-button{
+    background-color: rgba(128, 128, 128, 0);
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 3px;
+}
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: darkgray;
+}
+header {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 45px;
+    line-height: 2em;
+}
+
+section.Normal {
+    background-color: white;
+    color: black;
+}
+
+section.Imagem {
+    background-color: rgb(6, 6, 20);
+    color: white;
+}
+
+section.Imagem > p {
+    width: 400px;
+    background-color: rgba(20, 20, 40, 0.69);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    padding: 15px;
+}
