@@ -14,6 +14,16 @@
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root   {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Patrick Hand', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -22,6 +32,7 @@
 html, body {
     min-height: 100%;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
@@ -32,6 +43,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
 }
 
 header > p {
@@ -53,6 +66,8 @@ section {
     padding-bottom: 10vh;
     padding-left: 45px;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 4vw;
 }
 
 section.Normal {
@@ -66,8 +81,9 @@ section.Imagem {
 }
 
 section.Imagem > p {
-    width: 400px;
-    background-color: rgba(20, 20, 40, 0.69);
+    display: block;
+    padding: 10px;
+    background-color: rgba(14, 14, 28, 0.69);
 }
 
 footer {
