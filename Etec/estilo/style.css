@@ -1,4 +1,12 @@
 
+:root {
+    --fundoDark: #2D1A40;
+    --fundoLight: #543673;
+    --montainLight: #542B8C;
+    --desBlue: #A2B6F2;
+    --dark: #020007;
+    
+}
 
 *{
     margin: 0;
@@ -93,16 +101,74 @@ section img#mountains_front{
     
 }
 
+
 #btn{
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
     border-radius: 40px;
-    background: #fff;
-    color: #2b1055;
-    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 1.5vw;
     z-index: 100;
+    overflow: hidden;position: relative;
     transform: translateY(100px);
     margin-left: 10px;
     margin-right: 10px;
+    border: 2.5px white solid;
+}
+
+/*
+#btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    border: 1px solid white;
+    overflow: hidden;position: relative;
+    transition: color .5s .25;
+    transform: translateY(100px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+*/
+
+#btn::before,
+#btn::after{
+
+    content: "";
+    position: absolute;
+    top: 0;width: 150%; height: 150%;
+    background-color: var(--montainLight);
+    z-index: -1;
+    transform: scaleX(0);
+  
+}
+
+#btn::before{
+    left: 0;
+    transform-origin: left;
+}
+
+#btn::after{
+    right: 0;
+    transform-origin: right;
+}
+
+#btn:hover::before,
+#btn:hover::after{
+    transform: scaleX(0.5);
+}
+#btn:hover{
+    border: 2.5px solid;
+    color: var(--desBlue);
+    transition-delay: 1s;
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
 }
