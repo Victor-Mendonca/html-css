@@ -96,9 +96,8 @@ section img#mountains_front{
     position: absolute;
     color: #fff;
     white-space: nowrap;
-    font-size: 7.5vw;
+    font-size: 83px;
     z-index: 9;
-    
 }
 
 
@@ -109,13 +108,18 @@ section img#mountains_front{
     border-radius: 40px;
     background: rgba(255, 255, 255, 0);
     color: white;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     z-index: 100;
     overflow: hidden;position: relative;
     transform: translateY(100px);
     margin-left: 10px;
     margin-right: 10px;
     border: 2.5px white solid;
+}
+
+#btn p {
+    font-weight: bolder;
+    font-variant: small-caps;
 }
 
 /*
