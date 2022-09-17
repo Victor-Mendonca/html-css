@@ -107,7 +107,7 @@ section img#mountains_front{
     padding: 7px 25px;
     border-radius: 40px;
     background: rgba(255, 255, 255, 0);
-    color: white;
+    color: white;   
     font-size: 2.5vw;
     z-index: 100;
     overflow: hidden;position: relative;
